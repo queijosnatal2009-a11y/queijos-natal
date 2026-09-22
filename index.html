@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Queijos Natal | Da Canastra Uai!</title>
+  <meta name="description" content="Queijos Natal — queijos, doces e sabores de Minas. Desde 2009.">
+  <style>
+    :root{
+      --mustard:#d5a928;
+      --brown:#4a2d1b;
+      --cream:#fffaf0;
+      --dark:#24170f;
+      --green:#315c3a;
+      --white:#fff;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,Helvetica,sans-serif;
+      color:var(--dark);
+      background:var(--cream);
+      line-height:1.5;
+    }
+    header{
+      background:var(--brown);
+      color:white;
+      padding:18px 20px;
+      position:sticky;
+      top:0;
+      z-index:10;
+      box-shadow:0 2px 10px rgba(0,0,0,.18);
+    }
+    .nav{
+      max-width:1050px;
+      margin:auto;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:15px;
+    }
+    .brand{font-weight:800;font-size:1.25rem}
+    .brand span{color:var(--mustard)}
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:14px;
+      font-size:.95rem;
+    }
+    .hero{
+      background:linear-gradient(135deg,#fff4ce,#f7e3a5);
+      padding:65px 20px 55px;
+      text-align:center;
+    }
+    .badge{
+      display:inline-block;
+      background:var(--mustard);
+      color:var(--brown);
+      font-weight:800;
+      padding:7px 14px;
+      border-radius:30px;
+      margin-bottom:16px;
+    }
+    h1{
+      font-size:clamp(2.2rem,8vw,4.3rem);
+      margin:0 0 10px;
+      color:var(--brown);
+    }
+    .hero p{
+      max-width:650px;
+      margin:0 auto 24px;
+      font-size:1.12rem;
+    }
+    .btn{
+      display:inline-block;
+      padding:13px 21px;
+      border-radius:9px;
+      text-decoration:none;
+      font-weight:800;
+      margin:5px;
+    }
+    .btn-primary{background:var(--green);color:white}
+    .btn-secondary{background:white;color:var(--brown);border:2px solid var(--brown)}
+    section{padding:45px 20px}
+    .wrap{max-width:1050px;margin:auto}
+    .title{text-align:center;margin-bottom:28px}
+    .title h2{color:var(--brown);font-size:2rem;margin:0 0 6px}
+    .title p{margin:0;color:#6d5a4b}
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+      gap:16px;
+    }
+    .card{
+      background:white;
+      border-radius:14px;
+      padding:20px;
+      box-shadow:0 4px 18px rgba(74,45,27,.10);
+      border:1px solid #eadfca;
+    }
+    .card h3{margin:0 0 8px;color:var(--brown);font-size:1.05rem}
+    .price{font-size:1.25rem;font-weight:900;color:var(--green)}
+    .about{
+      background:var(--brown);
+      color:white;
+      text-align:center;
+    }
+    .about h2{color:var(--mustard)}
+    .about p{max-width:760px;margin:auto;font-size:1.05rem}
+    .contact{
+      text-align:center;
+      background:#f4ead6;
+    }
+    footer{
+      background:#21150e;
+      color:#ddd;
+      text-align:center;
+      padding:25px 15px;
+      font-size:.9rem;
+    }
+    .whatsapp{
+      position:fixed;
+      right:18px;
+      bottom:18px;
+      background:#25D366;
+      color:white;
+      width:58px;
+      height:58px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-decoration:none;
+      font-size:27px;
+      box-shadow:0 4px 15px rgba(0,0,0,.25);
+      z-index:20;
+    }
+    @media(max-width:650px){
+      nav{display:none}
+      .hero{padding-top:50px}
+      section{padding:38px 16px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">Queijos <span>Natal</span></div>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="badge">Desde 2009</div>
+    <h1>Queijos Natal</h1>
+    <p><strong>Da Canastra Uai!</strong><br>
+      Queijos, doces e sabores de Minas para você levar para casa, receber a família ou presentear.</p>
+    <a class="btn btn-primary" href="https://wa.me/p/35700675432881706/553198866050" target="_blank">Ver nosso catálogo</a>
+    <a class="btn btn-secondary" href="https://www.instagram.com/queijosnatal/" target="_blank">Instagram</a>
+  </section>
+
+  <section id="produtos">
+    <div class="wrap">
+      <div class="title">
+        <h2>Nossos produtos</h2>
+        <p>Alguns dos sabores disponíveis no nosso catálogo.</p>
+      </div>
+      <div class="grid">
+        <article class="card"><h3>Torresminho</h3><div class="price">R$ 20,00</div></article>
+        <article class="card"><h3>Queijo para churrasco / grelha — 500g</h3><div class="price">R$ 50,00</div></article>
+        <article class="card"><h3>Queijo Nozinho — 500g</h3><div class="price">R$ 50,00</div></article>
+        <article class="card"><h3>Salaminho — aprox. 300g</h3><div class="price">R$ 40,00</div></article>
+        <article class="card"><h3>Provolone desidratado com goiabada — aprox. 250g</h3><div class="price">R$ 40,00</div></article>
+        <article class="card"><h3>Rosquinha de nata caseira — 200g</h3><div class="price">R$ 20,00</div></article>
+        <article class="card"><h3>Doce de leite artesanal — 480g</h3><div class="price">R$ 40,00</div></article>
+        <article class="card"><h3>Requeijão com raspas — 500g</h3><div class="price">R$ 50,00</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="wrap">
+      <h2>Queijos Natal</h2>
+      <p>Desde 2009 levando o sabor de Minas para nossos clientes. Trabalhamos com produtos selecionados para deixar seu café, churrasco e momentos especiais ainda mais saborosos.</p>
+    </div>
+  </section>
+
+  <section id="contato" class="contact">
+    <div class="wrap">
+      <div class="title">
+        <h2>Peça pelo catálogo</h2>
+        <p>Confira os produtos e fale diretamente conosco pelo WhatsApp.</p>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/p/35700675432881706/553198866050" target="_blank">Abrir catálogo no WhatsApp</a>
+      <a class="btn btn-secondary" href="https://www.instagram.com/queijosnatal/" target="_blank">@queijosnatal</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  © 2009–2026 Queijos Natal • Da Canastra Uai!
+</footer>
+
+<a class="whatsapp" href="https://wa.me/p/35700675432881706/553198866050" target="_blank" aria-label="WhatsApp">☏</a>
+
+</body>
+</html>
